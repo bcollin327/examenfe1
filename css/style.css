@@ -79,16 +79,17 @@ article.textoBanner {
     flex-direction: column;
     align-items: flex-end;
     gap: 28px;
-    text-align: end;
+    text-align: right;
+    
 
 }
 
 .textoBanner h1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 114.6%;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.035em;
     padding-left: 112px;
     color: #232C50;
     
@@ -109,9 +110,9 @@ article.textoBanner {
 
 
 
-/*seccion central*/
+/*seccion seccion1*/
 
-.central {
+.seccion1 {
     margin-top: 150px;
     display: flex;
     background-color: #8B48BF;
@@ -151,6 +152,59 @@ article.textoBanner {
 }
 
 
+
+/**********************seccion2*******************************************/
+
+.seccion2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0px;
+    gap: 24px;
+    height: 428px;
+    left: -1px;
+    top: 985px;
+    background: #FAFAFA;
+justify-content: center;
+}
+    
+
+
+.seccion2 article{
+    width: 38%;
+    
+}
+
+.articulo{
+    margin-left: 30px;
+}
+
+.seccion2 button{
+    background-color: #8B48BF;
+    border-radius: 30px;
+    color: white;
+    width: 69px;
+    height: 43px;   
+    border: none;
+}
+
+.articuloParrafo{
+    padding-left: 92px;
+    color: #B3B2B7 ;
+    font-style: normal;
+font-weight: 500;
+font-size: 16.2984px;
+line-height: 26px;
+}
+
+.articuloTitulo{
+    padding-left: 20px;
+    font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 23px;
+color: #323851;
+}
 
 
 /*************estilos footer************************************/
