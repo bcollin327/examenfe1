@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Dosis:wght@300&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,9 +31,9 @@ header {
     justify-content: space-between;
     padding: 5px;
     font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 19px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 19px;
 }
 
 .botonContact {
@@ -49,7 +50,7 @@ line-height: 19px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    
+
 }
 
 /*************estilos body***************************************/
@@ -65,7 +66,7 @@ line-height: 19px;
     margin-left: 96px;
     margin-right: 110px;
     margin-top: 100px;
-    
+
 }
 
 /*.fotoPadding {
@@ -80,7 +81,7 @@ article.textoBanner {
     align-items: flex-end;
     gap: 28px;
     text-align: right;
-    
+
 
 }
 
@@ -92,20 +93,20 @@ article.textoBanner {
     letter-spacing: -0.035em;
     padding-left: 112px;
     color: #232C50;
-    
-   
+
+
 }
 
-.textoBanner h3{
-   
+.textoBanner h3 {
+
     font-style: normal;
     font-weight: 500;
     font-size: 16.56px;
     line-height: 157.1%;
     letter-spacing: -0.03em;
     padding-left: 110px;
-   
-  
+
+
 }
 
 
@@ -121,11 +122,11 @@ article.textoBanner {
     height: 168px;
     align-items: center;
     justify-content: space-between;
-       
+
 }
 
 .derecha {
-    
+
     font-weight: 700;
     font-size: 30px;
     Line-height: 41.26px;
@@ -134,10 +135,10 @@ article.textoBanner {
     margin-bottom: 40px;
     margin-right: 50px;
     width: 450px;
-    height: 88px;   
+    height: 88px;
 }
 
-.izquierda{
+.izquierda {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -155,7 +156,7 @@ article.textoBanner {
 
 /**********************seccion2*******************************************/
 
-.seccion2{
+.seccion2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -165,46 +166,240 @@ article.textoBanner {
     left: -1px;
     top: 985px;
     background: #FAFAFA;
-justify-content: center;
+    justify-content: center;
 }
-    
 
 
-.seccion2 article{
+
+.seccion2 article {
     width: 38%;
-    
+
 }
 
-.articulo{
+.articulo {
     margin-left: 30px;
 }
 
-.seccion2 button{
+.seccion2 button {
     background-color: #8B48BF;
     border-radius: 30px;
     color: white;
     width: 69px;
-    height: 43px;   
+    height: 43px;
     border: none;
 }
 
-.articuloParrafo{
+.articuloParrafo {
     padding-left: 92px;
-    color: #B3B2B7 ;
+    color: #B3B2B7;
     font-style: normal;
-font-weight: 500;
-font-size: 16.2984px;
-line-height: 26px;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
 }
 
-.articuloTitulo{
+.articuloTitulo {
     padding-left: 20px;
     font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 23px;
-color: #323851;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #323851;
+}
+/****seccion3********************************************/
+
+  
+ /* section article .card {
+    background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-left: 20px;
+       
+  }*/
+
+  .seccion3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;   
+
+}
+
+  .tituloSeccion3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #242E53;
+    margin-top: 97px;
+    margin-bottom: 74px;
+    
+}
+
+.contendeorCard{
+    margin: 0, 71px;
+    
+
+}
+  .card{
+    width: 445px;
+    height: 254px;
+    align-content: center;
+    font-style: normal;
+    gap: 21px;
+    background: #FAFAFA;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+       
+    
 }
 
 
-/*************estilos footer************************************/
+
+
+
+.contenedorCard{
+    display: flex;
+    margin-top: 74px;
+      
+}
+
+
+
+.card h4{
+    font-weight: 700;
+    color: #3F4868;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    text-align: center;
+}
+
+.card p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.6%;
+    padding-left:21px;
+    padding-right:21px;
+    color: #B9B9C1;
+}
+
+.botonMore{
+    text-align: center;
+    justify-content: center;
+    margin-top: 45px;
+    padding: 10px;
+    gap: 10px;
+    background: rgba(139, 72, 191, 0.7);
+    border-radius: 50px;
+    border: none;
+    width: 134px;
+    height: 44px;
+    left: 653px;
+    top: 1944px;
+}
+
+/****seccion4**********/
+
+.seccion4{
+    display: flex;
+    justify-content: space-between;
+    background-color: #8B48BF;
+    color: white;
+    margin-top:180px;
+
+}
+
+.seccion4 button{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 134px;
+    height: 44px;
+    margin-right:210px;
+    margin-top: 90px;
+    margin-bottom:90px;
+}
+
+.seccion4 h2{
+margin-left:165px;
+margin-top:64px;
+margin-bottom: 64px;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+width: 500px;
+height: 96px;
+letter-spacing: -0.005em;
+}
+/**********estilos footer************************************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+   
+
+}
+
+.logoFooter{
+    color:#FAFAFA;
+}
+footer li{
+    list-style-type: none;
+    padding:5px;
+  
+
+} 
+  
+.listaIconos{
+    display: inline-flex;
+} 
+
+footer article{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 9px;
+    
+
+}
+
+input{
+
+flex-direction: row;
+align-items: center;
+padding: 10px;
+gap: 10px;
+width: 201px;
+height: 44px;
+background: #FFFFFF;
+border-radius: 50px; }
+
+.botonGo{
+    background-color: #8B48BF;
+    border-radius: 50px;
+    color: white;
+    width: 69px;
+    height: 43px;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13.1806px;
+    line-height: 19px;
+    align-items: center;
+    color: #FFFFFF;
+
+}
