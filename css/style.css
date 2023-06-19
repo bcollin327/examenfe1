@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Dosis:wght@300&display=swap');
 
+:root {
+    --primario: #8B48BF;
+    --colorSecundario: #232C50;
+    --colorTercero: #FFFFFF;
+}
 
 * {
     box-sizing: border-box;
@@ -14,15 +19,21 @@ html {
 
 /*************estilos header*************************************/
 header {
-
     display: flex;
     justify-content: space-between;
     padding-left: 165px;
     padding-right: 165px;
     padding-top: 65px;
     padding-bottom: 65px;
+}
 
+.menuHamburguesa {
+    display: none;
+}
 
+header ul {
+    display: flex;
+    align-items: center;
 }
 
 .menuHeader li {
@@ -38,7 +49,7 @@ header {
 
 .botonContact {
     border-radius: 25px;
-    background-color: #8B48BF;
+    background-color: var(--primario);
     border: none;
     cursor: pointer;
     width: 110px;
@@ -55,7 +66,7 @@ header {
 
 /*************estilos body***************************************/
 
-/*seccion banner*/
+/****************seccion banner**********************/
 
 .banner {
     display: flex;
@@ -92,7 +103,7 @@ article.textoBanner {
     line-height: 114.6%;
     letter-spacing: -0.035em;
     padding-left: 112px;
-    color: #232C50;
+    color: var(--colorSecundario);
 
 
 }
@@ -111,15 +122,14 @@ article.textoBanner {
 
 
 
-/*seccion seccion1*/
+/*****************seccion seccion1********************************/
 
 .seccion1 {
     margin-top: 150px;
     display: flex;
-    background-color: #8B48BF;
-    color: white;
+    background-color: var(--primario);
+    color: var(--colorTercero);
     width: 100%;
-    height: 168px;
     align-items: center;
     justify-content: space-between;
 
@@ -162,10 +172,9 @@ article.textoBanner {
     align-items: center;
     padding: 40px 0px;
     gap: 24px;
-    height: 428px;
     left: -1px;
     top: 985px;
-    background: #FAFAFA;
+    background: var(--colorTercero);
     justify-content: center;
 }
 
@@ -181,7 +190,7 @@ article.textoBanner {
 }
 
 .seccion2 button {
-    background-color: #8B48BF;
+    background-color: var(--primario);
     border-radius: 30px;
     color: white;
     width: 69px;
@@ -204,12 +213,13 @@ article.textoBanner {
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
-    color: #323851;
+    color: var(#232C50);
 }
-/****seccion3********************************************/
 
-  
- /* section article .card {
+/*****************seccion3********************************************/
+
+
+/* section article .card {
     background-color: #f3f3f3;
       display: flex;
       flex-direction: column;
@@ -219,78 +229,101 @@ article.textoBanner {
        
   }*/
 
-  .seccion3{
+.seccion3 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;   
+    align-items: center;
+    
 
 }
 
-  .tituloSeccion3{
+.tituloSeccion3 {
     font-style: normal;
     font-weight: 700;
     font-size: 39.2143px;
     line-height: 156.6%;
     text-align: center;
     letter-spacing: -0.01em;
-    color: #242E53;
+    color: var(#232C50);
     margin-top: 97px;
     margin-bottom: 74px;
-    
-}
-
-.contendeorCard{
-    margin: 0, 71px;
-    
 
 }
-  .card{
-    width: 445px;
-    height: 254px;
+
+.contenedorCard {
+    
+    margin-left: 52px;
+    margin-right: 71px;
+    justify-content: space-between;
+    display: flex;
+
+
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+        font-style: normal;
+    gap: 21px;
+    background: var(--colorTercero);
+   
+
+}
+
+.card2 {
+    
+    
     align-content: center;
     font-style: normal;
     gap: 21px;
-    background: #FAFAFA;
-    
+    background: var(--colorTercero);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.card3 {
     
-       
     
+    align-content: center;
+    font-style: normal;
+    gap: 21px;
+    background: var(--colorTercero);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 
 
-
-.contenedorCard{
+.contenedorCard {
     display: flex;
     margin-top: 74px;
-      
+
 }
 
 
 
-.card h4{
+.card h4 {
     font-weight: 700;
-    color: #3F4868;
+    color: var(#232C50);
     font-size: 16.0714px;
     line-height: 156.6%;
     text-align: center;
 }
 
-.card p{
+.card p {
     font-weight: 500;
     font-size: 16px;
     line-height: 156.6%;
-    padding-left:21px;
-    padding-right:21px;
+    padding-left: 21px;
+    padding-right: 21px;
     color: #B9B9C1;
+    text-align: center;
 }
 
-.botonMore{
+.botonMore {
     text-align: center;
     justify-content: center;
     margin-top: 45px;
@@ -307,64 +340,67 @@ article.textoBanner {
 
 /****seccion4**********/
 
-.seccion4{
+.seccion4 {
     display: flex;
     justify-content: space-between;
-    background-color: #8B48BF;
+    background-color: var(--primario);
     color: white;
-    margin-top:180px;
+    margin-top: 180px;
 
 }
 
-.seccion4 button{
-    background: #FFFFFF;
+.seccion4 button {
+    background: var(#FFFFFF);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     width: 134px;
     height: 44px;
-    margin-right:210px;
+    margin-right: 210px;
     margin-top: 90px;
-    margin-bottom:90px;
+    margin-bottom: 90px;
 }
 
-.seccion4 h2{
-margin-left:165px;
-margin-top:64px;
-margin-bottom: 64px;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 48px;
-width: 500px;
-height: 96px;
-letter-spacing: -0.005em;
+.seccion4 h2 {
+    margin-left: 165px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    width: 500px;
+    height: 96px;
+    letter-spacing: -0.005em;
 }
+
 /**********estilos footer************************************/
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: var(#232C50);
     color: white;
    
 
+
 }
 
-.logoFooter{
-    color:#FAFAFA;
+.logoFooter {
+    color: var(--colorTercero);
 }
-footer li{
+
+footer li {
     list-style-type: none;
-    padding:5px;
-  
+    padding: 5px;
 
-} 
-  
-.listaIconos{
+
+}
+
+.listaIconos {
     display: inline-flex;
-} 
+}
 
-footer article{
+footer article {
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -373,23 +409,23 @@ footer article{
     align-items: center;
     padding: 0px;
     gap: 9px;
-    
+
 
 }
 
-input{
+input {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 201px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
 
-flex-direction: row;
-align-items: center;
-padding: 10px;
-gap: 10px;
-width: 201px;
-height: 44px;
-background: #FFFFFF;
-border-radius: 50px; }
-
-.botonGo{
-    background-color: #8B48BF;
+.botonGo {
+    background-color: var(--primario);
     border-radius: 50px;
     color: white;
     width: 69px;
@@ -401,5 +437,101 @@ border-radius: 50px; }
     line-height: 19px;
     align-items: center;
     color: #FFFFFF;
+
+}
+
+
+/*** @media***************/
+
+@media screen and (max-width: 480px) {
+
+    header {
+        justify-content: space-between;
+        padding: 0;
+        margin: 56.32px;
+    }
+
+    .menuHamburguesa {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header .botonContact {
+        display: none;
+    }
+
+
+    .banner {
+        flex-direction: column;
+        margin: 40px;
+        padding-left: 0;
+    }
+
+    .textoBanner {
+        padding-left: 0;
+    }
+
+    .fotoPadding {
+        width: 400px;
+        height: 341.53px;
+    }
+
+    .seccion1 {
+        flex-direction: column;
+        background-color: #3CDDF3;
+        justify-content: space-between;
+
+        align-self: stretch;
+    }
+
+    .derecha {
+        margin-left: 5px;
+
+    }
+
+    .seccion2 {
+        margin-top: 65px;
+        flex-direction: column;
+    }
+
+    .contenedorCard {
+        flex-direction: column;
+    }
+
+    .card1 {
+        display: none;
+    }
+
+    .card3 {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+
+    .seccion4 {
+        flex-direction: column;
+        padding: 0;
+        background-color: #3CDDF3;
+    }
+
+    .seccion4 h2 {
+        align-items: center;
+        margin: 40px;
+        padding: 0;
+    }
+
+    .seccion4 button {
+        background-color: var(--colorSecundario);
+        text-align: center;
+        margin-top: 40px;
+        color: #FFFFFF;
+    }
+    
 
 }
