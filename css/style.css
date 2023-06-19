@@ -219,22 +219,10 @@ article.textoBanner {
 /*****************seccion3********************************************/
 
 
-/* section article .card {
-    background-color: #f3f3f3;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-      margin-left: 20px;
-       
-  }*/
-
 .seccion3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
 .tituloSeccion3 {
@@ -267,41 +255,11 @@ article.textoBanner {
     font-style: normal;
     gap: 21px;
     background: var(--colorTercero);
-   
-
 }
-
-/*.card2 {
-    
-    
-    align-content: center;
-    font-style: normal;
-    gap: 21px;
-    background: var(--colorTercero);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card3 {
-    
-    
-    align-content: center;
-    font-style: normal;
-    gap: 21px;
-    background: var(--colorTercero);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-*/
-
-
 
 .contenedorCard {
     display: flex;
     margin-top: 74px;
-
 }
 
 
@@ -378,16 +336,17 @@ article.textoBanner {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    background-color: var(#232C50);
+    justify-content: space-evenly;
+    flex-wrap: wrap ;
+    background-color: var(--colorSecundario);
     color: white;
-   
-
-
-}
+    position: relative;
+    
+ }
 
 .logoFooter {
     color: var(--colorTercero);
+    /*margin-left: 193px;*/
 }
 
 footer li {
@@ -396,7 +355,13 @@ footer li {
 
 
 }
+.navFooter{
+display: flex;
+justify-content: space-between;
+gap: 219px;
+margin-top: 64.93px;
 
+}
 .listaIconos {
     display: inline-flex;
 }
@@ -410,10 +375,15 @@ footer article {
     align-items: center;
     padding: 0px;
     gap: 9px;
-
-
 }
 
+.navFooter{
+    margin-left: 171px;
+}
+
+form{ 
+    margin:167.8px ;
+}
 input {
     flex-direction: row;
     align-items: center;
@@ -502,11 +472,11 @@ input {
         flex-direction: column;
     }
 
-    .card1 {
+    .card:nth-child(1) {
         display: none;
     }
 
-    .card3 {
+    .card:nth-child(3) {
         display: none;
     }
 
