@@ -251,26 +251,27 @@ article.textoBanner {
 }
 
 .contenedorCard {
-    
+    display: flex;
     margin-left: 52px;
     margin-right: 71px;
     justify-content: space-between;
-    display: flex;
 
 
 }
 
-.card1 {
+.card {
     display: flex;
     flex-direction: column;
-        font-style: normal;
+    align-items: center;
+    align-content: center;
+    font-style: normal;
     gap: 21px;
     background: var(--colorTercero);
    
 
 }
 
-.card2 {
+/*.card2 {
     
     
     align-content: center;
@@ -293,7 +294,7 @@ article.textoBanner {
     flex-direction: column;
     align-items: center;
 }
-
+*/
 
 
 
