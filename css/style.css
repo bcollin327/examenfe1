@@ -13,6 +13,15 @@
     font-family: 'Be Vietnam Pro';
 }
 
+li:hover {
+    cursor: pointer;
+    background-color: var(--primario);
+  }
+
+button:hover {
+    cursor: pointer;
+  }
+
 html {
     max-width: 1440px;
 }
@@ -51,7 +60,6 @@ header ul {
     border-radius: 25px;
     background-color: var(--primario);
     border: none;
-    cursor: pointer;
     width: 110px;
     height: 34px;
     left: 397px;
@@ -295,6 +303,7 @@ article.textoBanner {
     height: 44px;
     left: 653px;
     top: 1944px;
+    color: var(--colorTercero);
 }
 
 /****seccion4**********/
@@ -338,9 +347,8 @@ footer {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap ;
-    background-color: var(--colorSecundario);
+    background-color: #1E1E26;
     color: white;
-    position: relative;
     
  }
 
@@ -352,10 +360,8 @@ footer {
 footer li {
     list-style-type: none;
     padding: 5px;
-
-
 }
-.navFooter{
+.listaFooter{
 display: flex;
 justify-content: space-between;
 gap: 219px;
@@ -366,7 +372,7 @@ margin-top: 64.93px;
     display: inline-flex;
 }
 
-footer article {
+footer article  { /*formulario*/
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -377,12 +383,17 @@ footer article {
     gap: 9px;
 }
 
-.navFooter{
+.listaFooter{
     margin-left: 171px;
+    
 }
 
 form{ 
     margin:167.8px ;
+}
+fieldset{
+    border: none;
+    display: flex;
 }
 input {
     flex-direction: row;
@@ -393,6 +404,7 @@ input {
     height: 44px;
     background: #FFFFFF;
     border-radius: 50px;
+    
 }
 
 .botonGo {
@@ -412,10 +424,11 @@ input {
 }
 
 
-/*** @media***************/
+/******************************************* @media***************/
 
 @media screen and (max-width: 480px) {
 
+    /***media header**/
     header {
         justify-content: space-between;
         padding: 0;
@@ -434,7 +447,7 @@ input {
         display: none;
     }
 
-
+    /***** media banner*****/
     .banner {
         flex-direction: column;
         margin: 40px;
@@ -450,53 +463,62 @@ input {
         height: 341.53px;
     }
 
+
+    /** media seccion1**/
     .seccion1 {
         flex-direction: column;
         background-color: #3CDDF3;
-        justify-content: space-between;
-
-        align-self: stretch;
+        justify-content: start;
+        padding-bottom: 40px;
+        padding-left: 20px;
     }
-
+   
     .derecha {
-        margin-left: 5px;
-
+        margin-left: 50px;
     }
 
+    .izquierda{
+        margin-left: 220px;
+        margin-top: 20px;
+    }
+
+    /**** media seccion2***/
     .seccion2 {
         margin-top: 65px;
         flex-direction: column;
     }
+    .seccion2 article {
+        width: 100%;
+    }
 
+    .articuloParrafo{
+        padding-left: 44px;
+        margin-top: 31px;
+    }
+    .seccion2 button{
+        margin-left: 34px;
+    }
     .contenedorCard {
         flex-direction: column;
     }
-
     .card:nth-child(1) {
         display: none;
     }
-
     .card:nth-child(3) {
         display: none;
     }
 
-    .footer {
-        flex-direction: column;
-
-    }
-
+    /*** media seccion4******/
     .seccion4 {
         flex-direction: column;
         padding: 0;
         background-color: #3CDDF3;
     }
-
     .seccion4 h2 {
         align-items: center;
         margin: 40px;
         padding: 0;
     }
-
     .seccion4 button {
         background-color: var(--colorSecundario);
         text-align: center;
@@ -504,5 +526,35 @@ input {
         color: #FFFFFF;
     }
     
+    /*** media footer**/
+    .footer {
+        flex-direction: column;
+       
+    }
 
+   fieldset{margin-top: 52.26px;}
+
+    .listaFooter{
+        order:1;
+       padding-left: 220.16px;
+       justify-content: flex-start;
+    }
+
+    .listaIconos{
+       order:2;
+       width: 100%;
+       margin-left: 50px;
+        
+    }
+    .listaIconos li{
+        padding-right: 69.83px;
+    }
+    .logoFooter{
+        order:3;
+        margin-left: 183.19px;
+        padding-left: 0;
+    }
+   .copyright{
+    order:4;
+   }
 }
