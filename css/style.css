@@ -3,7 +3,7 @@
 :root {
     --primario: #8B48BF;
     --colorSecundario: #232C50;
-    --colorTercero: #FFFFFF;
+    --colorTercero: #FFF;
 }
 
 * {
@@ -11,11 +11,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Be Vietnam Pro';
+    font-size: 16px;
+    font-style: normal;
 }
 
 li:hover {
     cursor: pointer;
-    background-color: var(--primario);
+
 }
 
 button:hover {
@@ -30,29 +32,26 @@ html {
 header {
     display: flex;
     justify-content: space-between;
-    padding-left: 165px;
-    padding-right: 165px;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding: 65px 165px;
 }
 
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+    
 .menuHamburguesa {
     display: none;
 }
 
-header ul {
-    display: flex;
-    align-items: center;
-}
-
-.menuHeader li {
+header nav ul li {
     list-style-type: none;
     display: inline-flex;
-    justify-content: space-between;
     padding: 5px;
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
+    color: #242E52;
     line-height: 19px;
 }
 
@@ -61,18 +60,15 @@ header ul {
     background-color: var(--primario);
     border: none;
     width: 110px;
-    height: 34px;
-    left: 397px;
-    top: 1340px;
-    color: white;
-    font-style: normal;
+    color: var(--colorTercero);
     font-weight: 400;
-    font-size: 16px;
     line-height: 19px;
-
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
 }
 
-/*************estilos body***************************************/
+
 
 /****************seccion banner**********************/
 
@@ -88,26 +84,17 @@ header ul {
 
 }
 
-/*.fotoPadding {
-    width: 540px;
-    height: 461.07px;
-
-}*/
-
 article.textoBanner {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 28px;
     text-align: right;
-
-
 }
 
 .textoBanner h1 {
-    font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 114.6%;
     letter-spacing: -0.035em;
     padding-left: 112px;
@@ -124,6 +111,7 @@ article.textoBanner {
     line-height: 157.1%;
     letter-spacing: -0.03em;
     padding-left: 110px;
+    color: #000;
 
 
 }
@@ -133,7 +121,7 @@ article.textoBanner {
 /*****************seccion seccion1********************************/
 
 .seccion1 {
-    margin-top: 150px;
+    margin-top: 86px;
     display: flex;
     background-color: var(--primario);
     color: var(--colorTercero);
@@ -144,33 +132,24 @@ article.textoBanner {
 }
 
 .derecha {
-
     font-weight: 700;
     font-size: 30px;
     Line-height: 41.26px;
-    margin-left: 220px;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-right: 50px;
     width: 450px;
-    height: 88px;
+    margin-left: 220px;
 }
 
 .izquierda {
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
     line-height: 151.1%;
     width: 450px;
-    height: 88px;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 220px;
-    margin-left: 50px;
-
 }
-
-
 
 /**********************seccion2*******************************************/
 
@@ -179,12 +158,11 @@ article.textoBanner {
     flex-wrap: wrap;
     align-items: center;
     padding: 40px 0px;
-    gap: 24px;
-    left: -1px;
-    top: 985px;
+    gap: 23px;
     background: var(--colorTercero);
     justify-content: center;
 }
+
 .seccion2 article {
     width: 38%;
 }
@@ -198,8 +176,8 @@ article.textoBanner {
     border-radius: 30px;
     color: white;
     width: 69px;
-    height: 43px;
     border: none;
+    padding: 10px 25px;
 }
 
 .articuloParrafo {
@@ -259,6 +237,7 @@ article.textoBanner {
     font-style: normal;
     gap: 21px;
     background: var(--colorTercero);
+    
 }
 
 .contenedorCard {
@@ -266,7 +245,12 @@ article.textoBanner {
     margin-top: 74px;
 }
 
+.card div{
+    background-color: #fafafa;
+    margin-top: 35px;
+}
 
+.fotoCard{position: absolute;}
 
 .card h4 {
     font-weight: 700;
@@ -274,6 +258,7 @@ article.textoBanner {
     font-size: 16.0714px;
     line-height: 156.6%;
     text-align: center;
+    margin-top: 55px;
 }
 
 .card p {
@@ -310,18 +295,17 @@ article.textoBanner {
     background-color: var(--primario);
     color: white;
     margin-top: 180px;
-
+    align-items: center;
 }
 
 .seccion4 button {
-    background: var(#FFFFFF);
+    background-color: var(--colorTercero);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-bottom: none;
     border-radius: 50px;
     width: 134px;
-    height: 44px;
     margin-right: 210px;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    padding: 10px;
 }
 
 .seccion4 h2 {
@@ -333,7 +317,6 @@ article.textoBanner {
     font-size: 40px;
     line-height: 48px;
     width: 500px;
-    height: 96px;
     letter-spacing: -0.005em;
 }
 
@@ -347,6 +330,7 @@ footer {
     color: white;
     padding-bottom: 43px;
     position: relative;
+    align-items: center;
 
 }
 
@@ -354,15 +338,27 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    margin-top: 54px;
-    margin-bottom: 69.32px;
     margin-left: 170px;
-    gap:55px;
+    gap: 55px;
+    margin-top: 74px;
 }
 
 .logoFooter {
     color: var(--colorTercero);
-    /*margin-left: 193px;*/
+    padding: 0;
+}
+
+.listaIconos {
+    display: inline-flex;
+}
+
+
+
+.listaFooter {
+    display: flex;
+    margin-top: 74px;
+    gap: 200px;
+    align-items: center;
 }
 
 footer li {
@@ -370,33 +366,18 @@ footer li {
     padding: 5px;
 }
 
-.listaFooter {
-    display: flex;
-    justify-content: space-between;
-    gap: 219px;
-    margin-top: 64.93px;
-    margin-left: 173px;
-}
-
-.listaIconos {
-    display: inline-flex;
-}
-
-footer article {
+.formulario {
     /*formulario*/
     display: flex;
-  
+    justify-content: space-between;
     flex-direction: row;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     padding: 0px;
     gap: 9px;
+    margin-top: 74px;
 }
 
-/*.listaFooter{
-    margin-left: 171px;
-    
-}*/
 form {
     padding-right: 164.79px;
     padding-left: 87px;
@@ -405,9 +386,7 @@ form {
 fieldset {
     border: none;
     display: flex;
-
 }
-
 
 input {
     flex-direction: row;
@@ -415,22 +394,21 @@ input {
     padding: 10px;
     gap: 10px;
     width: 201px;
-    height: 44px;
-    background: #FFFFFF;
+    background: var(--colorTercero);
     border-radius: 50px;
-
+    font-size: 13.18px;
 }
 
 .botonGo {
     background-color: var(--primario);
     border-radius: 50px;
-    color: white;
+    color: var(--colorTercero);
     width: 69px;
     height: 43px;
     border: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 13.1806px;
+    font-size: 13.18px;
     line-height: 19px;
     align-items: center;
     color: #FFFFFF;
@@ -439,6 +417,7 @@ input {
 
 .copyright {
     padding-left: 1000px;
+    color:  #8C8C94;
 }
 
 /******************************************* @media***************/
@@ -515,13 +494,13 @@ input {
         margin-top: 31px;
     }
 
-    .fondoTitulo{
+    .fondoTitulo {
         background-color: rgba(139, 72, 191, 0.3);
         border-radius: 50px;
         margin-left: 34px;
-       }
+    }
 
-    .contenedorCard {
+       .contenedorCard {
         flex-direction: column;
     }
 
@@ -553,6 +532,7 @@ input {
         color: #FFFFFF;
     }
 
+
     /*** media footer**/
     .footer {
         flex-direction: column;
@@ -580,7 +560,7 @@ input {
         order: 3;
         margin-left: 0;
         padding-left: 0;
-        width:100px
+        width: 100px
     }
 
     .logos {
@@ -596,5 +576,8 @@ input {
         padding: 0;
     }
 
-  
+    .menuHeader {
+        display: none;
+    }
+
 }
