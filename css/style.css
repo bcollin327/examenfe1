@@ -16,11 +16,11 @@
 li:hover {
     cursor: pointer;
     background-color: var(--primario);
-  }
+}
 
 button:hover {
     cursor: pointer;
-  }
+}
 
 html {
     max-width: 1440px;
@@ -185,12 +185,8 @@ article.textoBanner {
     background: var(--colorTercero);
     justify-content: center;
 }
-
-
-
 .seccion2 article {
     width: 38%;
-
 }
 
 .articulo {
@@ -345,12 +341,24 @@ article.textoBanner {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap ;
+    justify-content: space-between;
+    flex-wrap: wrap;
     background-color: #1E1E26;
     color: white;
-    
- }
+    padding-bottom: 43px;
+    position: relative;
+
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 54px;
+    margin-bottom: 69.32px;
+    margin-left: 170px;
+    gap:55px;
+}
 
 .logoFooter {
     color: var(--colorTercero);
@@ -361,18 +369,21 @@ footer li {
     list-style-type: none;
     padding: 5px;
 }
-.listaFooter{
-display: flex;
-justify-content: space-between;
-gap: 219px;
-margin-top: 64.93px;
 
+.listaFooter {
+    display: flex;
+    justify-content: space-between;
+    gap: 219px;
+    margin-top: 64.93px;
+    margin-left: 173px;
 }
+
 .listaIconos {
     display: inline-flex;
 }
 
-footer article  { /*formulario*/
+footer article {
+    /*formulario*/
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -383,18 +394,22 @@ footer article  { /*formulario*/
     gap: 9px;
 }
 
-.listaFooter{
+/*.listaFooter{
     margin-left: 171px;
     
+}*/
+form {
+    padding-right: 164.79px;
+    padding-left: 87px;
 }
 
-form{ 
-    margin:167.8px ;
-}
-fieldset{
+fieldset {
     border: none;
     display: flex;
+
 }
+
+
 input {
     flex-direction: row;
     align-items: center;
@@ -404,7 +419,7 @@ input {
     height: 44px;
     background: #FFFFFF;
     border-radius: 50px;
-    
+
 }
 
 .botonGo {
@@ -423,6 +438,9 @@ input {
 
 }
 
+.copyright {
+    padding-left: 1000px;
+}
 
 /******************************************* @media***************/
 
@@ -472,12 +490,12 @@ input {
         padding-bottom: 40px;
         padding-left: 20px;
     }
-   
+
     .derecha {
         margin-left: 50px;
     }
 
-    .izquierda{
+    .izquierda {
         margin-left: 220px;
         margin-top: 20px;
     }
@@ -487,23 +505,31 @@ input {
         margin-top: 65px;
         flex-direction: column;
     }
+
     .seccion2 article {
         width: 100%;
     }
 
-    .articuloParrafo{
-        padding-left: 44px;
+    .articuloParrafo {
+        padding-left: 34px;
+        margin-right: 28px;
         margin-top: 31px;
     }
-    .seccion2 button{
+
+    .fondoTitulo{
+        background-color: rgba(139, 72, 191, 0.3);
+        border-radius: 50px;
         margin-left: 34px;
-    }
+       }
+
     .contenedorCard {
         flex-direction: column;
     }
+
     .card:nth-child(1) {
         display: none;
     }
+
     .card:nth-child(3) {
         display: none;
     }
@@ -514,47 +540,62 @@ input {
         padding: 0;
         background-color: #3CDDF3;
     }
+
     .seccion4 h2 {
         align-items: center;
         margin: 40px;
         padding: 0;
     }
+
     .seccion4 button {
         background-color: var(--colorSecundario);
         text-align: center;
         margin-top: 40px;
         color: #FFFFFF;
     }
-    
+
     /*** media footer**/
     .footer {
         flex-direction: column;
-       
+
     }
 
-   fieldset{margin-top: 52.26px;}
-
-    .listaFooter{
-        order:1;
-       padding-left: 220.16px;
-       justify-content: flex-start;
+    fieldset {
+        margin-top: 52.26px;
+        padding-left: 60px;
     }
 
-    .listaIconos{
-       order:2;
-       width: 100%;
-       margin-left: 50px;
-        
-    }
-    .listaIconos li{
-        padding-right: 69.83px;
-    }
-    .logoFooter{
-        order:3;
-        margin-left: 183.19px;
+    .listaFooter {
+        order: 1;
         padding-left: 0;
+        margin: 0;
     }
-   .copyright{
-    order:4;
-   }
+
+
+    .listaIconos li {
+        padding-right: 69.83px;
+        margin-left: 0;
+    }
+
+    .logoFooter {
+        order: 3;
+        margin-left: 0;
+        padding-left: 0;
+        width:100px
+    }
+
+    .logos {
+        flex-direction: column-reverse;
+        order: 2;
+        padding: 0;
+        align-content: flex-start;
+
+    }
+
+    .copyright {
+        order: 3;
+        padding: 0;
+    }
+
+  
 }

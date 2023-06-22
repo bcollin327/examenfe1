@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Dosis:wght@300&display=swap');
+
+:root {
+    --primario: #8B48BF;
+    --colorSecundario: #232C50;
+    --colorTercero: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro';
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: var(--primario);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+html {
+    max-width: 1440px;
+}
+
+/*************estilos header*************************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 11.46vw;
+    padding-right: 11.46vw;
+    padding-top: 4.51vw;
+    padding-bottom: 4.51vw;
+}
+
+.menuHamburguesa {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+.menuHeader li {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0.34vw;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.87vw;
+    line-height: 1.26vw;
+}
+
+.botonContact {
+    border-radius: 1.74vw;
+    background-color: var(--primario);
+    border: none;
+    width: 7.64vw;
+    height: 2.33vw;
+    left: 27.57vw;
+    top: 58.33vw;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.03vw;
+    line-height: 1.26vw;
+}
+
+/*************estilos body***************************************/
+
+/****************seccion banner**********************/
+.banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 6.94vw;
+    margin-left: 6.67vw;
+    margin-right: 7.64vw;
+    margin-top: 10.42vw;
+}
+
+/*.fotoPadding {
+    width: 540px;
+    height: 461.07px;
+}*/
+
+article.textoBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.94vw;
+    text-align: right;
+}
+
+.textoBanner h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.78vw;
+    line-height: 8.86vw;
+    letter-spacing: -0.035
+ }
+
+ span{
+ background-color: blueviolet;
+ }
