@@ -17,6 +17,7 @@
 
 li:hover {
     cursor: pointer;
+    list-style:disc ;
 
 }
 
@@ -223,7 +224,7 @@ article.textoBanner {
 }
 
 .contenedorCard {
-    display: flex;
+    /*display: flex;*/
     margin-left: 52px;
     margin-right: 71px;
     justify-content: space-between;
@@ -370,10 +371,9 @@ footer li {
 
 .formulario {
     /*formulario*/
-    display: flex;
+    /*display: flex;*/
     justify-content: space-between;
     flex-direction: row;
-    /*justify-content: center;*/
     align-items: center;
     padding: 0px;
     gap: 9px;
@@ -406,7 +406,7 @@ input {
     border-radius: 50px;
     color: var(--colorTercero);
     width: 69px;
-    height: 43px;
+    margin-left: 10px;
     border: none;
     font-style: normal;
     font-weight: 500;
@@ -420,6 +420,7 @@ input {
 .copyright {
     padding-left: 1000px;
     color:  #8C8C94;
+    font-size: 12.5px;
 }
 
 /******************************************* @media***************/
@@ -431,6 +432,9 @@ input {
         justify-content: space-between;
         padding: 0;
         margin: 56.32px;
+    }
+    .menuHeader {
+        display: none;
     }
 
     .menuHamburguesa {
@@ -512,8 +516,8 @@ input {
         margin-left: 34px;
     }
 
-       .contenedorCard {
-        flex-direction: column;
+    .contenedorCard {
+       flex-direction: column;
     }
 
     .card:nth-child(1) {
@@ -554,51 +558,55 @@ input {
     }
 
 
-    /*** media footer**/
-    .footer {
-        flex-direction: column;
+/*** media footer**/
+    
+  
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorSecundario);
+    align-items: center;
+    gap: 25px;
+}
 
-    }
+.formulario{
+    order: -1;
+}
 
-    fieldset {
-        margin-top: 52.26px;
-        padding-left: 60px;
-    }
+.logos{
+    order: 1;
+    flex-direction: column-reverse;
+    padding: 25px;
+    margin: 0;
+    align-items: center;
+    gap:25px;
+}
 
-    .listaFooter {
-        order: 1;
-        padding-left: 0;
-        margin: 0;
-    }
+.logoFooter{
+    margin: 45px 0;
+}
+
+.copyright{ 
+   
+    order:2;
+    color: #fafafa;
+    padding: 0 0 0 100px;
+}
+
+input {
+       width: 288px;
+       padding-left: 5px;
+}
 
 
-    .listaIconos li {
-        padding-right: 69.83px;
-        margin-left: 0;
-    }
-
-    .logoFooter {
-        order: 3;
-        margin-left: 0;
-        padding-left: 0;
-        width: 100px
-    }
-
-    .logos {
-        flex-direction: column-reverse;
-        order: 2;
-        padding: 0;
-        align-content: flex-start;
-
-    }
-
-    .copyright {
-        order: 3;
-        padding: 0;
-    }
-
-    .menuHeader {
-        display: none;
-    }
+.listaIconos li {
+    padding-right:69.83px;
+    margin:0;
 
 }
+
+.listaFooter{
+    margin-left: 50px;
+}
+    
+ }
