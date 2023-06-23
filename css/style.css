@@ -151,6 +151,8 @@ article.textoBanner {
     margin-right: 220px;
 }
 
+.izquierda2{display:none;}
+
 /**********************seccion2*******************************************/
 
 .seccion2 {
@@ -450,7 +452,7 @@ input {
         padding-left: 0;
     }
 
-    .textoBanner {
+    .textoBanner h1 {
         padding-left: 0;
     }
 
@@ -464,20 +466,29 @@ input {
     .seccion1 {
         flex-direction: column;
         background-color: #3CDDF3;
-        justify-content: start;
-        padding-bottom: 40px;
-        padding-left: 20px;
+        justify-content: center;
+        padding: 40px 20px;
+        margin: 0;
+        gap: 50px;
     }
 
     .derecha {
-        margin-left: 50px;
+        margin: 0;
+        width: 440px;
+        align-self: stretch;
+        line-height: 114.6%;
     }
 
-    .izquierda {
-        margin-left: 220px;
-        margin-top: 20px;
+    .izquierda{display: none;}
+
+    .izquierda2{
+        display:block;
+        margin:0;
+        width:440px;
+       /* margin: 0 20px 40px 0px ;*/
     }
 
+   
     /**** media seccion2***/
     .seccion2 {
         margin-top: 65px;
@@ -487,6 +498,7 @@ input {
     .seccion2 article {
         width: 100%;
     }
+
 
     .articuloParrafo {
         padding-left: 34px;
@@ -511,24 +523,33 @@ input {
     .card:nth-child(3) {
         display: none;
     }
+    /*****seccion3 *****/
+    .seccion3{padding-bottom: 40px;}
+
 
     /*** media seccion4******/
     .seccion4 {
         flex-direction: column;
         padding: 0;
+        margin:0;
         background-color: #3CDDF3;
-    }
+        justify-content: center;
+        gap: 50px;  
+        padding:0 0 40px 0;
+        }
 
     .seccion4 h2 {
         align-items: center;
-        margin: 40px;
+       /* margin-left: 40px;*/
         padding: 0;
-    }
+        margin:40px 0 0 0;
+        width:324px;
+        text-align: center; }
 
     .seccion4 button {
         background-color: var(--colorSecundario);
         text-align: center;
-        margin-top: 40px;
+        margin: 0px;
         color: #FFFFFF;
     }
 
